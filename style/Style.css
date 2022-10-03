@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 3rem;
+    color: #ddd;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    opacity: 0;
+}
+
+
+
+.box {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+
+}
+
+.pic {
+
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+    position: relative;
+    border-radius: 100px;
+    transition: flex .6s ease-in;
+    cursor: pointer;
+
+}
+
+.pic__1 {
+    background-image: url(/pics/pexels-adil-2902747_alpvq4.jpg);
+}
+
+.pic__2 {
+    background-image: url(/pics/pexels-dreamlens-production-2450296_nladfc.jpg);
+}
+
+.pic__3 {
+    background-image: url(/pics/pexels-headshatter-1252399_z6yreh.jpg);
+}
+
+.pic__4 {
+    background-image: url(/pics/pexels-josh-willink-670625_anbkbf.jpg);
+}
+
+.pic__5 {
+    background-image: url(/pics/pexels-tyler-lastovich-808466_max2bd.jpg);
+
+}
+
+.active {
+    flex: 7;
+}
+
+.active p {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+
+    .box :nth-of-type(4),
+    .box :nth-of-type(5) {
+        display: none;
+    }
+
+}
